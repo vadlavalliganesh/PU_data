@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <meta name="description" content="Can know anyone information who studing computer science 1st year in Parul University by division wise or searching their names">
+  <meta name="keywords" content="HTML, CSS, JavaScript ,Parul University">
+  <meta name="author" content="A student in University">
+  <meta property="og:title" content="Student Data Parul University">
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Can know anyone information who studing computer science 1st year in Parul University by division wise or searching their names">
+  <meta property="og:image" content="images/sc.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="main.js"></script>
+
+  
+  <title>Student Data</title>
+</head>
+<body onload="startfun()">
+  <h class="title">
+    Student Data
+  </h>
+  <div id="overlay">
+    <center>
+        <div id = "preview" class="preview">
+            <div id="close-div">
+                <img src="images/close.png"  onclick="previewoff()">
+            </div>
+            <center>
+                <img id="preview-img"  src="images/man.png"><br><br>
+                <span class="text-preview" id="preview-name"></span><br><br>
+                <span id="preview-admin-no"></span><br><br>
+                <span class="text-preview" id="preview-class"></span><br><br>
+                <span class="text-preview" id="preview-number"></span><br><br>
+                <span class="text-preview" id="preview-mail"></span><br><br>
+                <a id="whatsapp" href="" target="_blank">
+                    <img src="images/wa.png">
+                </a>
+                <a id="email" href="">
+                    <img src="images/ma.png">
+                </a>
+            </center>
+    </center>
+  </div>
+  <center>
+    <div class="sub-main">
+      <div class="dropdown" id="dropdown">
+          <select name="divison" id="divison" onchange="selected()">
+          </select>
+        <img src="images/search.png" id="search-icon" onclick="displaysearch()">
+      </div>
+    </div>
+  </center>
+  <center class="cntrbtm">
+    <div class="dataprw" id="dataprw">
+      <br>
+      <center id="hellosj">
+        SELECT DIVISION.!
+      </center>
+
+      </ul>
+    </div>
+  </center>
+  <div class="credits" style="padding-top:10px ;">
+    <h class="credit">Made by: </h>
+    <a class="credit" href="https://github.com/vadlavalliganesh/PU_details/" target="_blank" >
+    <img src="images/github.png" alt="" srcset="">
+    vadlavalli ganesh
+    </a>
+  </div>
+</body>
+
+</html>
